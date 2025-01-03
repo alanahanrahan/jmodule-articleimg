@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Current Article Intro Image</name>
+    <author>Your Name</author>
+    <version>1.0.0</version>
+    <description>Displays the intro image of the current article</description>
+    <files>
+        <filename module="mod_currentintroimage">mod_currentintroimage.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="category_id"
+                    type="category"
+                    extension="com_content"
+                    label="Category"
+                    description="Select category to limit display to"
+                    multiple="true"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
